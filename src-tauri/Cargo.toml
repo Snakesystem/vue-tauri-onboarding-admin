@@ -1,8 +1,8 @@
 [package]
 name = "vue-tauri-onboarding-admin"
 version = "0.1.0"
-description = "A Tauri App"
-authors = ["you"]
+description = "Native Desktop Snakesystem Back Office"
+authors = ["Feri Irawansyah"]
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
@@ -24,4 +24,4 @@ serde = { version = "1", features = ["derive"] }
 serde_json = "1"
 reqwest = { version = "0.12.14", features = ["json"] }
 reqwest_cookie_store = "0.8.0"
-
+chrono = { version = "0.4.40", features = ["serde"] }

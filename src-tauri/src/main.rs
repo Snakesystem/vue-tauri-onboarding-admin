@@ -3,6 +3,7 @@
 
 pub mod models {
     pub mod auth_model;
+    pub mod user_model;
 }
 
 fn main() {

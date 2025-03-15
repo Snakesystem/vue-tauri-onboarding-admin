@@ -5,13 +5,13 @@ pub struct ActionResult {
     pub result: bool,
     pub message: String,
     #[serde(skip_serializing_if = "Option::is_none")]
-    pub data: Option<SessionInfo>,
+    pub data: Option<Session>,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub error: Option<String>,
 }
 
 #[derive(Serialize, Deserialize, Debug)]
-pub struct SessionInfo {
+pub struct Session {
     pub auth_usernid: i32,
     pub email: String,
     pub mobile_phone: String,

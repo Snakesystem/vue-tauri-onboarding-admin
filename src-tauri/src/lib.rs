@@ -10,11 +10,13 @@ fn greet(name: &str) -> String {
 }
 
 mod handlers {
-    pub mod fetch; // Import langsung tanpa mod.rs
+    pub mod auth_handler; // Import langsung tanpa mod.rs
+    pub mod user_handler; // Import langsung tanpa mod.rs
 }
 
 mod models {
     pub mod auth_model;
+    pub mod user_model;
 }
 
 // Function buat bikin HTTP client dengan cookie store
@@ -38,9 +40,13 @@ pub fn run() {
         .plugin(tauri_plugin_opener::init())
         .invoke_handler(tauri::generate_handler![
             greet,
-            handlers::fetch::check_session,
-            handlers::fetch::login,
-            handlers::fetch::logout,
+            // handlers untuk authentikasi,
+            handlers::auth_handler::check_session,
+            handlers::auth_handler::login,
+            handlers::auth_handler::logout,
+
+            // handlers untuk user
+            handlers::user_handler::get_user_info
         ])
         .run(tauri::generate_context!())
         .expect("error while running tauri application");

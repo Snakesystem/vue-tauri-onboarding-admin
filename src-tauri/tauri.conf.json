@@ -12,8 +12,8 @@
   "app": {
     "windows": [
       {
-        "title": "vue-tauri-onboarding-admin",
-        "width": 800,
+        "title": "Snakesystem Back Office",
+        "width": 920,
         "height": 600
       }
     ],
