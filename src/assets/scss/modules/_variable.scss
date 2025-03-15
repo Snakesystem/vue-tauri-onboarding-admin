@@ -1,0 +1,270 @@
+// #region Variables Primary Color
+$primary-100: #F9FCFF !default;
+$primary-200: #C9E3FF !default;
+$primary-300: #9CC9FF !default;
+$primary-400: #71AEFF !default;
+$primary-500: #4492FF !default;
+$primary-600: #0074FF !default;
+$primary-700: #1d4ed8 !default;
+$primary-800: #1e40af !default;
+$primary-900: #1e3a8a !default;
+
+// map: primary-100 to primary-900
+$primary-colors: (
+    100: $primary-100,
+    200: $primary-200,
+    300: $primary-300,
+    400: $primary-400,
+    500: $primary-500,
+    600: $primary-600,
+    700: $primary-700,
+    800: $primary-800,
+    900: $primary-900
+);
+
+// replace primary color bootstrap
+$primary: $primary-600;
+// #endregion
+
+// #region Variables Secondary Color
+$secondary-100: #FEFEFE !default;
+$secondary-200: #F1F1F1 !default;
+$secondary-300: #CFD6DC !default;
+$secondary-400: #C2C2C2 !default;
+$secondary-500: #848484 !default;
+$secondary-600: #5a5a5a !default;
+$secondary-700: #333333 !default;
+$secondary-800: #221e1c !default;
+$secondary-900: #1a1513 !default;
+
+// map: secondary-100 to secondary-900
+$secondary-colors: (
+    100: $secondary-100,
+    200: $secondary-200,
+    300: $secondary-300,
+    400: $secondary-400,
+    500: $secondary-500,
+    600: $secondary-600,
+    700: $secondary-700,
+    800: $secondary-800,
+    900: $secondary-900
+);
+
+// replace secondary color bootstrap
+$secondary: $secondary-600;
+// #endregion
+
+// #region Variables Success Color
+$success-100: #E7F7F1 !default;
+$success-200: #CFF0E3 !default;
+$success-300: #88D9B9 !default;
+$success-400: #58C99D !default;
+$success-500: #40C18F !default;
+$success-600: #10B273 !default;
+$success-700: #065f46 !default;
+$success-800: #064e3b !default;
+$success-900: #022c22 !default;
+
+// map: success-100 to success-900
+$success-colors: (
+    100: $success-100,
+    200: $success-200,
+    300: $success-300,
+    400: $success-400,
+    500: $success-500,
+    600: $success-600,
+    700: $success-700,
+    800: $success-800,
+    900: $success-900
+);
+
+// replace success color bootstrap
+$success: $success-600;
+// #endregion
+
+// #region Variables Warning Color
+$warning-100: #FFF8E9 !default;
+$warning-200: #FDE4A5 !default;
+$warning-300: #FCD778 !default;
+$warning-400: #FCD062 !default;
+$warning-500: #FBC94B !default;
+$warning-600: #FABC1E !default;
+$warning-700: #FF8F00 !default;
+$warning-800: #FF7300 !default;
+$warning-900: #FF4D00 !default;
+
+// map: warning-100 to warning-900
+$warning-colors: (
+    100: $warning-100,
+    200: $warning-200,
+    300: $warning-300,
+    400: $warning-400,
+    500: $warning-500,
+    600: $warning-600,
+    700: $warning-700,
+    800: $warning-800,
+    900: $warning-900
+);
+
+// replace warning color bootstrap
+$warning: $warning-600;
+// #endregion
+
+// #region Variables Error Color
+$danger-100: #FBE5DE !default;
+$danger-200: #FC997E !default;
+$danger-300: #F9866A !default;
+$danger-400: #F47257 !default;
+$danger-500: #EF5C46 !default;
+$danger-600: #EA4335 !default;
+$danger-700: #b91c1c !default;
+$danger-800: #991b1b !default;
+$danger-900: #450a0a !default;
+
+// map: danger-100 to danger-900
+$danger-colors: (
+    100: $danger-100,
+    200: $danger-200,
+    300: $danger-300,
+    400: $danger-400,
+    500: $danger-500,
+    600: $danger-600,
+    700: $danger-700,
+    800: $danger-800,
+    900: $danger-900
+);
+
+// replace danger color bootstrap
+$danger: $danger-600;
+// #endregion
+
+// #region Variables Info Color
+$info-100: #ccfbf1 !default;
+$info-200: #ccfbf1 !default;
+$info-300: #5eead4 !default;
+$info-400: #2dd4bf !default;
+$info-500: #14b8a6 !default;
+$info-600: #0d9488 !default;
+$info-700: #0f766e !default;
+$info-800: #115e59 !default;
+$info-900: #042f2e !default;
+
+// map: info-100 to info-900
+$info-colors: (
+    100: $info-100,
+    200: $info-200,
+    300: $info-300,
+    400: $info-400,
+    500: $info-500,
+    600: $info-600,
+    700: $info-700,
+    800: $info-800,
+    900: $info-900
+);
+
+// replace info color bootstrap
+$info: $info-600;
+// #endregion
+
+// #region Variables Font
+$font-default-color: #121212 !default;
+$fw-regular: 400 !default;
+$fw-medium: 600 !default;
+$fw-bold: 700 !default;
+$fw-heavy: 900 !default;
+
+$fs-tiny: 0.625rem !default;
+$fs-sm: 0.75rem !default;
+$fs-cap: 0.875rem !default;
+$fs-base: 1rem !default;
+$fs-h6: 1.25rem !default;
+$fs-h5: 1.5rem !default;
+$fs-h4: 1.875rem !default;
+$fs-h3: 2.5rem !default;
+$fs-h2: 3.75rem !default;
+$fs-h1: 5rem !default;
+
+$lh-tiny: 16px !default;
+$lh-sm: 18px !default;
+$lh-cap: 22px !default;
+$lh-h6: 24px !default;
+$lh-h5: 28px !default;
+$lh-h4: 34px !default;
+$lh-h3: 44px !default;
+$lh-h2: 60px !default;
+$lh-h1: 80px !default;
+
+$color-maps: (
+  primary: $primary-colors,
+  secondary: $secondary-colors,
+  success: $success-colors,
+  warning: $warning-colors,
+  danger: $danger-colors,
+  info: $info-colors,
+);
+
+$dark-color: #212529;
+// #endregion
+
+// #region Variables Button
+$map-btn-sizes: (
+  xs: (
+    height: 1.5rem,
+    padding: 1.25rem 0.5rem,
+    font-size: 0.625rem
+  ),
+  sm: (
+    height: 1.75rem,
+    padding: 0.375rem 0.75rem,
+    font-size: 0.75rem
+  ),
+  md: (
+    height: 2.25rem, 
+    padding: 0.75rem 1rem,
+    font-size: 0.875rem
+  ),
+  lg: (
+    height: 2.75rem,
+    padding: 1rem 1.25rem,
+    font-size: 1rem
+  ),
+  login: (
+    height: 2.75rem,
+    padding: 1rem 1.25rem,
+    font-size: 1rem
+  ),
+  xl: (
+    height: 3.25rem,
+    padding: 1.25rem 1.5rem,
+    font-size: 1.125rem
+  ),
+  xxl: (
+    height: 3.75rem,
+    padding: 1.5rem 1.75rem,
+    font-size: 1.25rem
+  )
+);
+
+$btn-radius: 5px !default;
+
+$map-btn-colors: (
+  primary: $primary-600,
+  secondary: $secondary-600,
+  success: $success-600,
+  warning: $warning-600,
+  danger: $danger-600,
+  info: $info-600
+);
+// #endregion
+
+// #region Variables Input
+$input-font-size: $fs-cap !default;
+$input-radius: 5px !default;
+$input-border: 1px solid $secondary-300 !default;
+$input-focus-border: 1px solid $primary-500 !default;
+$input-focus-box-shadow: 0 0 0 1px $primary-500 !default;
+$input-invalid-border: 1px solid $danger-600 !default;
+$input-invalid-box-shadow: 0 0 0 1px $danger-600 !default;
+// #endregion
+
+@import "bootstrap/scss/bootstrap";
