@@ -40,6 +40,7 @@ pub fn run() {
             greet,
             handlers::fetch::check_session,
             handlers::fetch::login,
+            handlers::fetch::logout,
         ])
         .run(tauri::generate_context!())
         .expect("error while running tauri application");

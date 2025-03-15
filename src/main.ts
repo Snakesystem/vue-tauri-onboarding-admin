@@ -6,6 +6,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import routes from "./routes";
 import { invoke } from "@tauri-apps/api/core";
 import { ActionResult } from "./app/model";
+import {createBootstrap} from 'bootstrap-vue-next'
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
@@ -34,6 +35,6 @@ router.beforeEach(async (to, _from, next) => {
       document.title = `${to.meta.title} - Customers Onboarding` || "Customers Onboarding";
       next();
     }
-  });
+});
 
-createApp(App).use(router).mount("#app");
+createApp(App).use(router).use(createBootstrap).mount("#app");
